@@ -17,21 +17,29 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-<<<<<<< HEAD
+
             android:name=".activity.SecondForTesstActivity"
             android:exported="false" />
         <activity
-=======
 
->>>>>>> 122c0875e0e864718f554653f588bdd971cb034a
-            android:name=".activity.GitTestingPullActivity"
-
-            android:name=".activity.TestingActivity"
+            android:name=".activity.SettleMarginHistoryDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SettleMarginActivity"
-
+            android:name=".activity.SettleMarginHistoryActivity"
             android:exported="false" />
+        <activity
+
+            android:name=".activity.GitTestingPullActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettleMarginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.StatementActivity"
             android:exported="true"

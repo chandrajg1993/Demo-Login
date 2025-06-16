@@ -17,6 +17,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activity.SecondForTesstActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.GitTestingPullActivity"
             android:exported="false" />
         <activity

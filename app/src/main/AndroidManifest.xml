@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.scci.demoapplogin">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.scci.demoapplogin.DemoapploginApplication"
+        android:name=".DemoapploginApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,23 +17,29 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.scci.demoapplogin.activity.StatementActivity"
+            android:name=".activity.TestingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SettleMarginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatementActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.scci.demoapplogin.activity.DashBoardActivity"
+            android:name=".activity.DashBoardActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.scci.demoapplogin.activity.OTPVerificationActivity"
+            android:name=".activity.OTPVerificationActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.scci.demoapplogin.activity.LoginActivity"
+            android:name=".activity.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.scci.demoapplogin.activity.SplashScreenActivity"
+            android:name=".activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

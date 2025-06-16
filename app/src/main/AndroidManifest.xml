@@ -17,15 +17,23 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-
-            android:name=".activity.GitTestingPullActivity"
-
-            android:name=".activity.TestingActivity"
+            android:name=".activity.SettleMarginHistoryDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SettleMarginActivity"
-
+            android:name=".activity.SettleMarginHistoryActivity"
             android:exported="false" />
+        <activity
+            android:name=".activity.GitTestingPullActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettleMarginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.StatementActivity"
             android:exported="true"

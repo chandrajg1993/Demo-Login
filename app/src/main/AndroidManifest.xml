@@ -17,10 +17,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+<<<<<<< HEAD
             android:name=".activity.SecondForTesstActivity"
             android:exported="false" />
         <activity
+=======
+
+>>>>>>> 122c0875e0e864718f554653f588bdd971cb034a
             android:name=".activity.GitTestingPullActivity"
+
+            android:name=".activity.TestingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SettleMarginActivity"
+
             android:exported="false" />
         <activity
             android:name=".activity.StatementActivity"

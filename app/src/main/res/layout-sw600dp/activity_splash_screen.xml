@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/re_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activity.SplashScreenActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_280sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle_shape_splash"
+            android:tint="#D89E29"
+            tools:ignore="UseAppTint"/>
+
+        <ImageView
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_260sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle_shape_splash"
+            android:tint="#F0BC53"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle_shape_splash"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_238sdp"
+            android:layout_height="@dimen/_238sdp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:padding="@dimen/_22sdp"
+            android:src="@drawable/oil_hours" />
+    </FrameLayout>
+
+</RelativeLayout>

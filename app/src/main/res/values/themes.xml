@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ProgressDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PineEditTheme">
+        <item name="colorControlNormal">@color/darkModeColor_yellow</item>
+        <item name="colorControlActivated">@color/darkModeColor_yellow</item>
+        <item name="colorControlHighlight">@color/darkModeColor_yellow</item>
+    </style>
+
+    <style name="MyToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">?attr/colorPrimaryDark</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="MyNumberPickerTheme" parent="@android:style/Widget.Material.NumberPicker" tools:targetApi="n">
+        <item name="colorControlNormal">@color/divider</item>
+        <item name="android:textColorPrimary">@color/grey</item>
+        <item name="colorAccent">@color/divider</item>
+        <item name="android:fontFamily">@font/bold_font</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:divider">@drawable/strikethrough_foreground</item>
+    </style>
+
+
+
+</resources>

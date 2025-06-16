@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Demo App Login</string>
+    <string name="mobileno_heading" translatable="false">Enter Your Mobile Number</string>
+    <string name="otpsent_msg" translatable="false">You will receive an OTP for verification your account</string>
+    <string name="next_msg" translatable="false">Submit</string>
+    <string name="otp_display_msg" translatable="false">Enter the 4 digit code that has been</string>
+    <string name="didtreceiveotp" translatable="false">Didn\'t receive OTP?</string>
+    <string name="resend_otp" translatable="false"><u>RESEND OTP</u></string>
+    <string name="logoutbtn" translatable="false">Logout</string>
+    <string name="cancelbtn" translatable="false">Cancel</string>
+    <string name="logout" translatable="false">Logout?</string>
+    <string name="areuslog" translatable="false">Are you sure do you want to logout your account?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ok" translatable="false">OK</string>
+
+</resources>

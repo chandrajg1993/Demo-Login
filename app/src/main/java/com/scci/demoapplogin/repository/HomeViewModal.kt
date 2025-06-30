@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.scci.demoapplogin.request.*
+import com.scci.demoapplogin.response.ProductList
 import com.scci.demoapplogin.utility.ResponseState
 import com.scci.demoapplogin.utility.ApiResponseAny
 import com.scci.demoapplogin.utility.ApiState
@@ -23,6 +24,10 @@ class HomeViewModal @Inject constructor(private val repository: HomeRepository, 
     private val _validateOTPResponse = MutableLiveData<ApiState<ApiResponseAny>>()
     val validateOTPResponse: LiveData<ApiState<ApiResponseAny>>
         get() = _validateOTPResponse
+
+    private val _productList = MutableLiveData<ApiState<ProductList>>()
+    val productList: LiveData<ApiState<ProductList>>
+        get() = _productList
 
 
     private var isLogin = false
@@ -67,6 +72,29 @@ class HomeViewModal @Inject constructor(private val repository: HomeRepository, 
                         prefrenceRepository.setLogin()
                         isLogin = true
                         _validateOTPResponse.value = ApiState.Success(validateOTPResponse.data!!, validateOTPResponse.msg!!)
+
+                    } catch (ex: Exception) {
+                        ex.printStackTrace()
+                    }
+                }
+
+            }
+
+        }
+    }
+    fun productList() {
+        viewModelScope.launch {
+
+            _productList.value = ApiState.Loading()
+
+            when (val validateOTPResponse = repository.productList()) {
+
+                is ResponseState.Error -> _productList.value = ApiState.Failure(validateOTPResponse.msg!!, errorCode = 0)
+
+                is ResponseState.Success -> {
+                    try {
+
+                        _productList.value = ApiState.Success(validateOTPResponse.data!!, validateOTPResponse.msg!!)
 
                     } catch (ex: Exception) {
                         ex.printStackTrace()

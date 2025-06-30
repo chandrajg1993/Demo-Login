@@ -1,10 +1,12 @@
 package com.scci.demoapplogin.di
 
 import com.scci.demoapplogin.request.*
+import com.scci.demoapplogin.response.ProductList
 import com.scci.demoapplogin.utility.ApiResponseAny
 import com.scci.demoapplogin.utility.Constant.CANCOLLECTIONPOINTSERVICES
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface GcPosApis {
@@ -13,5 +15,8 @@ interface GcPosApis {
 
     @POST(value = CANCOLLECTIONPOINTSERVICES+"/api/Auth/ValidateCanCollectionAgent")
     suspend fun validateCanCollectionOTP(@Body requestData: ValidateOTPReq): Response<ApiResponseAny>
+
+    @GET(value = "products")
+    suspend fun products(): Response<ProductList>
 
 }
